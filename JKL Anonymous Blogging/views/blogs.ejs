@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+
+<div class="jumbotron centered">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-8">
+        <h1>All Blogs</h1>
+        <p><%= startingContent %></p>
+        <% usersWithPosts.forEach(function(user){ %>
+          <% user.post.forEach(function(p) {%>
+            <h2><%= p["title"] %> </h2>
+            <p><%= p.content.substring(0, 200) + "..." %>
+            <a href="/blogs/<%= p["title"] %>">Read More</a>
+            </p>
+          <% }) %>
+        <% }) %>
+      </div>
+
+      <div class="img-row">
+        <div class="col-sm-4">
+          <img class="blogs-img" src="/images/blogs.png" alt="blogs-img">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("./partials/footer"); -%>
