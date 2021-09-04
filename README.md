@@ -5,5 +5,5 @@
 ## Development Server
 1. After downloading files, create .env file, and put your own API Key and Domain in it for mail.js; 
 2. Also put your own clientID & clientSecret for Google, Facebook, Twitter, and Microsoft Oauth included app.js in the .env file.
-3. Then run "npm install" in the termilal, and run "nodemon -L app.js". 
-4. Ding!! now your Anonymous Blogging app is running at http://localhost:3000
+3. Then after getting in the folder via termianl path, run "npm install" in the termilal, and then "nodemon -L app.js". 
+4. Ding!! Now your Anonymous Blogging app is running at http://localhost:3000 .
